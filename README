@@ -1,0 +1,17 @@
+= YouTube Tags
+
+Enables inclusion of YouTube videos within Radiant pages.
+
+  <ul>
+    <r:youtube user="pelargir">
+       <r:videos count="5">
+         <li>
+           <img src="<r:video:thumbnail />" /><br />
+           <a href="<r:video:url />"><r:video:title /></a><br />
+           <r:video:view_count> - <r:video:published />
+         </li>
+       </r:videos>
+    </r:youtube>
+  </ul>
+
+Depends on the youtube-g gem being installed.
